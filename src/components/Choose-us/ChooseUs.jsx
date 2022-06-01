@@ -16,13 +16,15 @@ const ChooseUs = () => {
             <div className="choose__content">
               <h2>Why Choose Us</h2>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt mollitia nostrum harum eos praesentium odit a sed quod
-                aut fugit. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Reprehenderit omnis, culpa eligendi inventore perspiciatis
-                minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores cupiditate facilis provident quidem accusamus impedit
-                tenetur laboriosam debitis nisi eius!
+                We provide the expert and also trustworthy IT training courses
+                to corporate and also specific clients. In this manner, we are
+                taken into consideration as the most effective and even expert
+                to get indulged in the training sessions to be a professional in
+                the IT area of any kind. We have numerous training courses to
+                provide, depending upon the requirements and also choices of our
+                clients. Any individual could select the very best training
+                course based on their requirements and also interests to become
+                a specialized individual in that specific area.
               </p>
             </div>
           </Col>
@@ -31,7 +33,7 @@ const ChooseUs = () => {
             <div className="choose__img">
               {showVideo ? (
                 <ReactPlayer
-                  url="https://www.youtube.com/watch?v=qFp27TR4Yew"
+                  url="https://www.youtube.com/watch?v=oBqgUC0vk4Y"
                   controls
                   width="100%"
                   height="350px"

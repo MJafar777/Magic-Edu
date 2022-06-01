@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import heroImg from "../../assests/images/hero-img1.png";
+import heroImg from "../../assests/images/web1.jpg";
 import "./hero-section.css";
 
 const HeroSection = () => {
@@ -11,12 +11,14 @@ const HeroSection = () => {
           <Col lg="6" md="6">
             <div className="hero__content">
               <h2 className="mb-4 hero__title">
-                Anytime Anywhere <br /> Learn on your <br /> Suitable Schedule
+                Learn something new every day from the Senior Level Teachers
               </h2>
               <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.
-                Aut saepe voluptatum earum delectus <br /> deserunt id iste,
-                quas officiis et repellat!
+                Start, switch, or advance your career with less than in 6
+                months, Professional Certificates, and degrees from world-class
+                Senoir Level Teachers and Companies. MagicSoft helps software
+                engineers and their teams increase productivity and reach their
+                potential!
               </p>
             </div>
             <div className="search">
@@ -26,7 +28,12 @@ const HeroSection = () => {
           </Col>
 
           <Col lg="6" md="6">
-            <img src={heroImg} alt="" className="w-100 hero__img" />
+            <img
+              style={{ width: "40rem", height: "30rem" }}
+              src={heroImg}
+              alt=""
+              className="hero__img"
+            />
           </Col>
         </Row>
       </Container>

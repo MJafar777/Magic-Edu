@@ -4,6 +4,7 @@ import HeroSection from "../components/Hero-Section/HeroSection";
 import CompanySection from "../components/Company-section/Company";
 
 import AboutUs from "../components/About-us/AboutUs";
+import Languages from "../components/Languages/langIcon";
 import Courses from "../components/Courses-section/Courses";
 import ChooseUs from "../components/Choose-us/ChooseUs";
 import Features from "../components/Feature-section/Features";
@@ -21,6 +22,7 @@ const Home = () => {
       <HeroSection />
       <CompanySection />
       <AboutUs />
+      <Languages />
       <Courses />
       <ChooseUs />
       <Features />

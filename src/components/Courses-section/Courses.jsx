@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import courseImg1 from "../../assests/images/web-design.png";
 import courseImg2 from "../../assests/images/graphics-design.png";
 import courseImg3 from "../../assests/images/ui-ux.png";
@@ -9,28 +9,31 @@ import CourseCard from "./CourseCard";
 const coursesData = [
   {
     id: "01",
-    title: "Web Design BootCamp-2022 for Beginners",
-    lesson: 12,
-    students: 12.5,
-    rating: 5.9,
+    title: "Frontend (Beginner to MASTER)",
+    lesson: 140,
+    students: 40,
+    rating: 4.9,
+    duration: 7,
     imgUrl: courseImg1,
   },
 
   {
     id: "02",
-    title: "Professional Graphics Design, PhotoShop, Adobe XD, Figma",
-    lesson: 12,
-    students: 12.5,
-    rating: 5.9,
+    title: "Backend (Beginner to MASTER)",
+    lesson: 160,
+    students: 55,
+    rating: 5,
+    duration: 8,
     imgUrl: courseImg2,
   },
 
   {
     id: "03",
-    title: "UI/UX BootCamp for Beginners in 2022",
-    lesson: 12,
-    students: 12.5,
-    rating: 5.9,
+    title: "Mobile App (Beginner to MASTER)",
+    lesson: 140,
+    students: 34,
+    rating: 4.7,
+    duration: 7,
     imgUrl: courseImg3,
   },
 ];
@@ -43,16 +46,18 @@ const Courses = () => {
           <Col lg="12" className="mb-5">
             <div className="course__top d-flex justify-content-between align-items-center">
               <div className="course__top__left w-50">
-                <h2>Our Popular Courses</h2>
+                <h2>TRENDING COURSES</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                  consequatur libero quod voluptatibus ullam quia quas, vitae
-                  voluptatem recusandae reprehenderit!
+                  Join latest trending courses in Web Design and Development at
+                  Web Development Institute. All the courses help students to
+                  learn Design and Development concepts of website!
                 </p>
               </div>
 
               <div className="w-50 text-end">
-                <button className="btn">See All</button>
+                <button onClick={console.log("ss")} className="btn">
+                  See All
+                </button>
               </div>
             </div>
           </Col>

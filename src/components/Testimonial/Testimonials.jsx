@@ -35,14 +35,14 @@ const Testimonials = () => {
                         Excellent course of materials
                       </h6>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Facilis saepe id voluptas molestiae. Aperiam corrupti
-                        voluptas earum at molestiae neque!
+                        Teachers are very good and very understanding of other
+                        issues also. Never faced a problem to deal with them. I
+                        very much recommend this company.
                       </p>
 
                       <div className="student__info mt-4">
-                        <h6 className="fw-bold">Jhon Doe</h6>
-                        <p>California, United State</p>
+                        <h6 className="fw-bold">Jonibek Munirov</h6>
+                        <p>TUIT student</p>
                       </div>
                     </div>
                   </div>
@@ -50,35 +50,35 @@ const Testimonials = () => {
                   <div>
                     <div className="single__testimonial">
                       <h6 className="mb-3 fw-bold">
-                        Excellent course of materials
+                        Practical knowledge is impressive
                       </h6>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Facilis saepe id voluptas molestiae. Aperiam corrupti
-                        voluptas earum at molestiae neque!
+                        Best education coaching center, the staff here are very
+                        polite, understanding and have a kind nature. Best Web
+                        Development course to get practical knowledge of web
+                        development and web design.
                       </p>
 
                       <div className="student__info mt-4">
-                        <h6 className="fw-bold">Jhon Doe</h6>
-                        <p>California, United State</p>
+                        <h6 className="fw-bold">Jamshid Kalandarov</h6>
+                        <p>TSUE student </p>
                       </div>
                     </div>
                   </div>
 
                   <div>
                     <div className="single__testimonial">
-                      <h6 className="mb-3 fw-bold">
-                        Excellent course of materials
-                      </h6>
+                      <h6 className="mb-3 fw-bold">Teachers is expert</h6>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Facilis saepe id voluptas molestiae. Aperiam corrupti
-                        voluptas earum at molestiae neque!
+                        Being a developer I was always looking for a course,
+                        which can provide practical knowledge in Web development
+                        and I believe MagicSoft Which is part of Backend has
+                        satisfied all my expectations.
                       </p>
 
                       <div className="student__info mt-4">
-                        <h6 className="fw-bold">Jhon Doe</h6>
-                        <p>California, United State</p>
+                        <h6 className="fw-bold">Doston Mardonov</h6>
+                        <p>TAQI student</p>
                       </div>
                     </div>
                   </div>
