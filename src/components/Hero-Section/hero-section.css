@@ -21,8 +21,12 @@
   border-radius: 50px;
   margin-top: 20px;
 }
+.hero__img {
+  width: 38rem;
+  height: 28rem;
+}
 
-/* @media (max-width: 1399px) {
+@media (max-width: 1399px) {
   .hero__img {
     width: 40rem;
     height: 30rem;
@@ -52,7 +56,7 @@
     height: 19rem;
   }
 }
-*/
+
 @media (max-width: 541px) {
   .hero__img {
     width: 26rem;
