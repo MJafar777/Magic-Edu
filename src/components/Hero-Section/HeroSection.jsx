@@ -29,7 +29,7 @@ const HeroSection = () => {
 
           <Col lg="6" md="6">
             <img
-              // style={{ width: "36rem", height: "26rem" }}
+              style={{ width: "80%", height: "26rem" }}
               src={heroImg}
               alt=""
               className="hero__img"
