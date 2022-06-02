@@ -1,8 +1,30 @@
 import React from "react";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import CourseModal from "./CourseModal";
+
+import Backdrop from "@mui/material/Backdrop";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Fade from "@mui/material/Fade";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "800px",
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
+
 const CourseCard = (props) => {
-  const { imgUrl, title, lesson, students, rating, duration } = props.item;
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const { imgUrl, title, lesson, students, rating, duration, price, subjects } =
+    props.item;
 
   return (
     <div className="single__course__item" key={title}>
@@ -29,34 +51,53 @@ const CourseCard = (props) => {
           </p>
 
           <div>
-            <Button
-              color="primary"
-              outline
-              size="sm"
-              onClick={console.log("h2ll")}
-            >
+            <Button variant="outlined" onClick={handleOpen}>
               More info
             </Button>
-
-            <Modal toggle={function noRefCheck() {}}>
-              <ModalHeader charCode="Y" toggle={function noRefCheck() {}}>
-                Modal title
-              </ModalHeader>
-              <ModalBody>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </ModalBody>
-              <ModalFooter>
-                <Button color="primary" onClick={function noRefCheck() {}}>
-                  Do Something
-                </Button>{" "}
-                <Button onClick={function noRefCheck() {}}>Cancel</Button>
-              </ModalFooter>
+            <Modal
+              aria-labelledby="transition-modal-title"
+              aria-describedby="transition-modal-description"
+              open={open}
+              onClose={handleClose}
+              closeAfterTransition
+              BackdropComponent={Backdrop}
+              BackdropProps={{
+                timeout: 500,
+              }}
+            >
+              <Fade in={open}>
+                <Box sx={style}>
+                  <Typography
+                    id="transition-modal-title"
+                    variant="h6"
+                    component="h2"
+                  >
+                    {title}
+                  </Typography>
+                  <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                    <ul>
+                      <li>Lessons: {lesson}</li>
+                      <li>Max students in group: {Math.floor(students / 3)}</li>
+                      <li>Price: {price} sum</li>
+                      <li>Lessons per week: 4 days</li>
+                      <li>Duration: {duration} months</li>
+                      <li>Hours per day: 2.5 hours</li>
+                      <li>
+                        Technologies:
+                        <ol>
+                          {subjects.map((val) => {
+                            return (
+                              <li>
+                                <h6>{val}</h6>
+                              </li>
+                            );
+                          })}
+                        </ol>
+                      </li>
+                    </ul>
+                  </Typography>
+                </Box>
+              </Fade>
             </Modal>
           </div>
         </div>
