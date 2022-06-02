@@ -22,7 +22,7 @@
   margin-top: 20px;
 }
 
-@media (max-width: 1399px) {
+/* @media (max-width: 1399px) {
   .hero__img {
     width: 40rem;
     height: 30rem;
@@ -52,16 +52,16 @@
     height: 19rem;
   }
 }
-
+*/
 @media (max-width: 541px) {
   .hero__img {
-    width: 25rem;
-    height: 15rem;
+    width: 26rem;
+    height: 16rem;
   }
 }
 @media (max-width: 340px) {
   .hero__img {
-    width: 22rem;
-    height: 12rem;
+    width: 20rem;
+    height: 15rem;
   }
 }
