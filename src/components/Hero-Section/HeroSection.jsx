@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import heroImg from "../../assests/images/web1.jpg";
+// import heroImg from "../../assests/images/web1.jpg";
 import "./hero-section.css";
 
 const HeroSection = () => {
@@ -30,7 +30,7 @@ const HeroSection = () => {
           <Col lg="6" md="6">
             <img
               style={{ width: "80%", height: "26rem" }}
-              src={heroImg}
+              // src={heroImg}
               alt=""
               className="hero__img"
             />
