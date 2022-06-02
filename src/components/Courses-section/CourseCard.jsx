@@ -6,6 +6,7 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import "./courses.css";
 
 const style = {
   position: "absolute",
@@ -13,6 +14,8 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "800px",
+  height: "400px",
+  overflowY: "scroll",
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -65,7 +68,7 @@ const CourseCard = (props) => {
                 timeout: 500,
               }}
             >
-              <Fade in={open}>
+              <Fade className="modal_scroll" in={open}>
                 <Box sx={style}>
                   <Typography
                     id="transition-modal-title"

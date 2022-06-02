@@ -35,3 +35,57 @@
 .course__top__left h2 {
   font-weight: 600;
 }
+
+.modal_scroll::-webkit-scrollbar {
+  width: 1em;
+}
+
+.modal_scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.modal_scroll::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #17bf9e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #17bf9e;
+}
+
+.modal_scroll::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.modal_scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.modal_scroll::-webkit-scrollbar-thumb {
+  background: #17bf9e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.modal_scroll::-webkit-scrollbar-thumb:hover {
+  background: #17bf9e;
+}
