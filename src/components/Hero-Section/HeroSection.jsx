@@ -25,7 +25,7 @@ const HeroSection = () => {
                   <div className="search">
                      <input type="text" placeholder="Search" />
                      <button className="btn">Search</button>
-                     <i class="ri-search-line"></i>
+                     <i className="ri-search-line"></i>
                   </div>
                </div>
 
