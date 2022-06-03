@@ -12,7 +12,7 @@ const Testimonials = () => {
     speed: 500,
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     slidesToScroll: 1,
   };
   return (
@@ -60,8 +60,8 @@ const Testimonials = () => {
                       </p>
 
                       <div className="student__info mt-4">
-                        <h6 className="fw-bold">Jamshid Kalandarov</h6>
-                        <p>TSUE student </p>
+                        <h6 className="fw-bold">Ja'far Mirzaraximov</h6>
+                        <p>Technology master</p>
                       </div>
                     </div>
                   </div>
@@ -79,6 +79,25 @@ const Testimonials = () => {
                       <div className="student__info mt-4">
                         <h6 className="fw-bold">Doston Mardonov</h6>
                         <p>TAQI student</p>
+                      </div>
+                    </div>
+                  </div>
+   
+                  <div>
+                    <div className="single__testimonial">
+                      <h6 className="mb-3 fw-bold">
+                        Practical knowledge is impressive
+                      </h6>
+                      <p>
+                        Best education coaching center, the staff here are very
+                        polite, understanding and have a kind nature. Best Web
+                        Development course to get practical knowledge of web
+                        development and web design.
+                      </p>
+
+                      <div className="student__info mt-4">
+                        <h6 className="fw-bold">Jamshid Kalandarov</h6>
+                        <p>TSUE student </p>
                       </div>
                     </div>
                   </div>
