@@ -4,125 +4,148 @@ import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import "./footer.css";
 
 const footerQuickLinks = [
-  {
-    display: "Home",
-    url: "#",
-  },
-  {
-    display: "About US",
-    url: "#",
-  },
+   {
+      display: "Home",
+      url: "#home",
+   },
+   {
+      display: "About Us",
+      url: "#about",
+   },
 
-  {
-    display: "Courses",
-    url: "#",
-  },
+   {
+      display: "Courses",
+      url: "#courses",
+   },
 
-  {
-    display: "Blog",
-    url: "#",
-  },
+   {
+      display: "Blog",
+      url: "#",
+   },
 ];
 
 const footerInfoLinks = [
-  {
-    display: "Privacy Policy",
-    url: "#",
-  },
-  {
-    display: "Membership",
-    url: "#",
-  },
+   {
+      display: "Privacy Policy",
+      url: "#",
+   },
+   {
+      display: "Membership",
+      url: "#",
+   },
 
-  {
-    display: "Purchases Guide",
-    url: "#",
-  },
+   {
+      display: "Purchases Guide",
+      url: "#",
+   },
 
-  {
-    display: "Terms of Service",
-    url: "#",
-  },
+   {
+      display: "Terms of Service",
+      url: "#",
+   },
 ];
 
 const Footer = () => {
-  return (
-    <footer className="footer">
-      <Container>
-        <Row>
-          <Col lg="3" md="6" className="mb-4">
-            <h2 className=" d-flex align-items-center gap-1">
-              <i class="ri-pantone-line"></i> MagicSoft
-            </h2>
+   return (
+      <footer className="footer">
+         <Container>
+            <Row>
+               <Col lg="3" md="6" className="mb-4">
+                  <h2 className=" d-flex align-items-center gap-1">
+                     <i class="ri-pantone-line"></i> MagicSoft
+                  </h2>
 
-            <div className="follows">
-              <p className="mb-0">Follow us on social media</p>
-              <span>
-                {" "}
-                <a href="facebook.com">
-                  <i class="ri-facebook-line"></i>
-                </a>
-              </span>
+                  <div className="follows">
+                     <p className="mb-0">Follow us on social media</p>
 
-              <span>
-                {" "}
-                <a href="facebook.com">
-                  <i class="ri-instagram-line"></i>
-                </a>
-              </span>
+                     <span>
+                        {" "}
+                        <a href="https://t.me/magicsoft_uz">
+                           <i class="ri-telegram-line"></i>
+                        </a>
+                     </span>
 
-              <span>
-                {" "}
-                <a href="facebook.com">
-                  <i class="ri-linkedin-line"></i>
-                </a>
-              </span>
+                     <span>
+                        {" "}
+                        <a href="facebook.com">
+                           <i class="ri-facebook-line"></i>
+                        </a>
+                     </span>
 
-              <span>
-                {" "}
-                <a href="facebook.com">
-                  <i class="ri-twitter-line"></i>
-                </a>
-              </span>
-            </div>
-          </Col>
+                     <span>
+                        {" "}
+                        <a href="facebook.com">
+                           <i class="ri-instagram-line"></i>
+                        </a>
+                     </span>
 
-          <Col lg="3" md="6" className="mb-4">
-            <h6 className="fw-bold">Explore</h6>
-            <ListGroup className="link__list">
-              {footerQuickLinks.map((item, index) => (
-                <ListGroupItem key={index} className="border-0 ps-0 link__item">
-                  {" "}
-                  <a href={item.url}>{item.display}</a>
-                </ListGroupItem>
-              ))}
-            </ListGroup>
-          </Col>
+                     <span>
+                        {" "}
+                        <a href="https://uz.linkedin.com/in/umid-rustamov">
+                           <i class="ri-linkedin-line"></i>
+                        </a>
+                     </span>
 
-          <Col lg="3" md="6" className="mb-4">
-            <h6 className="fw-bold">Information</h6>
-            <ListGroup className="link__list">
-              {footerInfoLinks.map((item, index) => (
-                <ListGroupItem key={index} className="border-0 ps-0 link__item">
-                  {" "}
-                  <a href={item.url}>{item.display}</a>
-                </ListGroupItem>
-              ))}
-            </ListGroup>
-          </Col>
+                     <span>
+                        {" "}
+                        <a href="facebook.com">
+                           <i class="ri-twitter-line"></i>
+                        </a>
+                     </span>
+                  </div>
+               </Col>
 
-          <Col lg="3" md="6">
-            <h6 className="fw-bold">Get in Touch</h6>
+               <Col lg="3" md="6" className="mb-4">
+                  <h6 className="fw-bold">Explore</h6>
+                  <ListGroup className="link__list">
+                     {footerQuickLinks.map((item, index) => (
+                        <ListGroupItem
+                           key={index}
+                           className="border-0 ps-0 link__item"
+                        >
+                           {" "}
+                           <a href={item.url}>{item.display}</a>
+                        </ListGroupItem>
+                     ))}
+                  </ListGroup>
+               </Col>
 
-            <p>Address: Tashkent, Lutfiy street 41A</p>
-            <p>Phone: +99894 651-81-41 </p>
-            <p>Email: magicsoft.uz@gmail.com</p>
-            <p>Telegram: @magicsoft_admin</p>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
-  );
+               <Col lg="3" md="6" className="mb-4">
+                  <h6 className="fw-bold">Information</h6>
+                  <ListGroup className="link__list">
+                     {footerInfoLinks.map((item, index) => (
+                        <ListGroupItem
+                           key={index}
+                           className="border-0 ps-0 link__item"
+                        >
+                           {" "}
+                           <a href={item.url}>{item.display}</a>
+                        </ListGroupItem>
+                     ))}
+                  </ListGroup>
+               </Col>
+
+               <Col lg="3" md="6">
+                  <h6 className="fw-bold">Get in Touch</h6>
+
+                  <p>
+                     <b>Address:</b> Tashkent, Lutfiy street 41A
+                  </p>
+                  <p>
+                     <b>Phone:</b> +99894 651-81-41{" "}
+                  </p>
+                  <p>
+                     <b>Email:</b> magicsoft.uz@gmail.com
+                  </p>
+                  <p>
+                     <b>Telegram:</b>{" "}
+                     <a href="https://t.me/magicsoft_admin">@magicsoft_admin</a>
+                  </p>
+               </Col>
+            </Row>
+         </Container>
+      </footer>
+   );
 };
 
 export default Footer;
