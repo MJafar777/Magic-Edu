@@ -104,8 +104,8 @@ const coursesData = [
 
 const Courses = () => {
    return (
-      <section>
-         <Container id="courses">
+      <section id="courses">
+         <Container>
             <Row>
                <Col lg="12" className="mb-5">
                   <div className="course__top d-flex justify-content-between align-items-center">
@@ -119,18 +119,20 @@ const Courses = () => {
                         </p>
                      </div>
 
-                     <div className="w-50 text-end">
+                     <div className="w-50 text-center">
                         <button onClick={console.log("ss")} className="btn">
                            See All
                         </button>
                      </div>
                   </div>
                </Col>
-               {coursesData.map((item, key) => (
-                  <Col key={key} lg="4" md="6" sm="6">
-                     <CourseCard key={item.id} item={item} />
-                  </Col>
-               ))}
+               <div className="courses__grid">
+                  {coursesData.map((item, key) => (
+                     <div key={key}>
+                        <CourseCard key={item.id} item={item} />
+                     </div>
+                  ))}
+               </div>
             </Row>
          </Container>
       </section>

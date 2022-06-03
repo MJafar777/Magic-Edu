@@ -7,16 +7,16 @@ import "./about.css";
 
 const AboutUs = () => {
    return (
-      <section>
-         <Container id="about">
-            <Row>
-               <Col lg="6" md="6">
+      <section id="about">
+         <Container>
+            <div className="about__grid">
+               <div>
                   <div className="about__img">
                      <img src={aboutImg} alt="" className="w-100" />
                   </div>
-               </Col>
+               </div>
 
-               <Col lg="6" md="6">
+               <div>
                   <div className="about__content">
                      <h2>About Us</h2>
                      <p>
@@ -87,8 +87,8 @@ const AboutUs = () => {
                         </div>
                      </div>
                   </div>
-               </Col>
-            </Row>
+               </div>
+            </div>
          </Container>
       </section>
    );

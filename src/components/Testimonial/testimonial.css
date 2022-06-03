@@ -1,3 +1,16 @@
 .testimonial__content h2 {
-  font-weight: 600;
+   font-weight: 600;
+}
+.testimonial__wrapper {
+   display: flex;
+   gap: 2%;
+}
+
+@media (max-width: 600px) {
+   .testimonial__wrapper {
+      flex-direction: column;
+   }
+   #testimonial__content {
+      width: 90vw !important;
+   }
 }

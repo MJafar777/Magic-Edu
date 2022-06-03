@@ -49,8 +49,8 @@ const Footer = () => {
    return (
       <footer className="footer">
          <Container>
-            <Row>
-               <Col lg="3" md="6" className="mb-4">
+            <div className="footer__grid">
+               <div>
                   <h2 className=" d-flex align-items-center gap-1">
                      <i className="ri-pantone-line"></i> MagicSoft
                   </h2>
@@ -93,9 +93,9 @@ const Footer = () => {
                         </a>
                      </span>
                   </div>
-               </Col>
+               </div>
 
-               <Col lg="3" md="6" className="mb-4">
+               <div>
                   <h6 className="fw-bold">Explore</h6>
                   <ListGroup className="link__list">
                      {footerQuickLinks.map((item, index) => (
@@ -108,9 +108,9 @@ const Footer = () => {
                         </ListGroupItem>
                      ))}
                   </ListGroup>
-               </Col>
+               </div>
 
-               <Col lg="3" md="6" className="mb-4">
+               <div>
                   <h6 className="fw-bold">Information</h6>
                   <ListGroup className="link__list">
                      {footerInfoLinks.map((item, index) => (
@@ -123,9 +123,9 @@ const Footer = () => {
                         </ListGroupItem>
                      ))}
                   </ListGroup>
-               </Col>
+               </div>
 
-               <Col lg="3" md="6">
+               <div>
                   <h6 className="fw-bold">Get in Touch</h6>
 
                   <p>
@@ -141,8 +141,8 @@ const Footer = () => {
                      <b>Telegram:</b>{" "}
                      <a href="https://t.me/magicsoft_admin">@magicsoft_admin</a>
                   </p>
-               </Col>
-            </Row>
+               </div>
+            </div>
          </Container>
       </footer>
    );

@@ -5,15 +5,15 @@ import "./hero-section.css";
 
 const HeroSection = () => {
    return (
-      <section>
-         <Container id="home">
-            <Row>
-               <Col lg="6" md="6">
+      <section className="hero">
+         <Container>
+            <div className="hero__grid">
+               <div>
+                  <h2 className="mb-4 hero__title">
+                     Learn something new every day from the Senior Level
+                     Teachers
+                  </h2>
                   <div className="hero__content">
-                     <h2 className="mb-4 hero__title">
-                        Learn something new every day from the Senior Level
-                        Teachers
-                     </h2>
                      <p className="mb-5">
                         Start, switch, or advance your career with less than in
                         6 months, Professional Certificates, and degrees from
@@ -25,18 +25,19 @@ const HeroSection = () => {
                   <div className="search">
                      <input type="text" placeholder="Search" />
                      <button className="btn">Search</button>
+                     <i class="ri-search-line"></i>
                   </div>
-               </Col>
+               </div>
 
-               <Col lg="6" md="6">
+               <div>
                   <img
                      // style={{ width: "80%", height: "26rem" }}
                      src={heroImg}
                      alt=""
                      className="hero__img"
                   />
-               </Col>
-            </Row>
+               </div>
+            </div>
          </Container>
       </section>
    );
