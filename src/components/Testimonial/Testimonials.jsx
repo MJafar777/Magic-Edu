@@ -29,6 +29,7 @@ const Testimonials = () => {
                 <h2 className="mb-4">Our Students Voice</h2>
 
                 <Slider {...settings}>
+                  {/* this blog is Jonibek Munirov */}
                   <div>
                     <div className="single__testimonial">
                       <h6 className="mb-3 fw-bold">
@@ -46,7 +47,7 @@ const Testimonials = () => {
                       </div>
                     </div>
                   </div>
-
+                  {/* this blog is Ja'far Mirzaraximov */}
                   <div>
                     <div className="single__testimonial">
                       <h6 className="mb-3 fw-bold">
@@ -65,7 +66,7 @@ const Testimonials = () => {
                       </div>
                     </div>
                   </div>
-
+                  {/* this blog is Doston Mardonov */}
                   <div>
                     <div className="single__testimonial">
                       <h6 className="mb-3 fw-bold">Teachers is expert</h6>
@@ -82,7 +83,8 @@ const Testimonials = () => {
                       </div>
                     </div>
                   </div>
-   
+                  {/* this blog is  Jamshid Kalandarov*/}
+
                   <div>
                     <div className="single__testimonial">
                       <h6 className="mb-3 fw-bold">
