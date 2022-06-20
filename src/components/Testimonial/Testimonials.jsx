@@ -28,80 +28,74 @@ const Testimonials = () => {
                      <div className="testimonial__content w-50" id="testimonial__content">
                         <h2 className="mb-4">Our Students Voice</h2>
 
-                        <Slider {...settings}>
-                           <div>
-                              <div className="single__testimonial">
-                                 <h6 className="mb-3 fw-bold">
-                                    Excellent course of materials
-                                 </h6>
-                                 <p>
-                                    Teachers are very good and very
-                                    understanding of other issues also. Never
-                                    faced a problem to deal with them. I very
-                                    much recommend this company.
-                                 </p>
+                <Slider {...settings}>
+                  {/* this blog is Jonibek Munirov */}
+                  <div>
+                    <div className="single__testimonial">
+                      <h6 className="mb-3 fw-bold">
+                        Excellent course of materials
+                      </h6>
+                      <p>
+                        Teachers are very good and very understanding of other
+                        issues also. Never faced a problem to deal with them. I
+                        very much recommend this company.
+                      </p>
 
-                                 <div className="student__info mt-4">
-                                    <h6 className="fw-bold">Jonibek Munirov</h6>
-                                    <p>TUIT student</p>
-                                 </div>
-                              </div>
-                           </div>
+                      <div className="student__info mt-4">
+                        <h6 className="fw-bold">Jonibek Munirov</h6>
+                        <p>TUIT student</p>
+                      </div>
+                    </div>
+                  </div>
+                  {/* this blog is Ja'far Mirzaraximov */}
+                  <div>
+                    <div className="single__testimonial">
+                      <h6 className="mb-3 fw-bold">
+                        Practical knowledge is impressive
+                      </h6>
+                      <p>
+                        Best education coaching center, the staff here are very
+                        polite, understanding and have a kind nature. Best Web
+                        Development course to get practical knowledge of web
+                        development and web design.
+                      </p>
 
-                           <div>
-                              <div className="single__testimonial">
-                                 <h6 className="mb-3 fw-bold">
-                                    Practical knowledge is impressive
-                                 </h6>
-                                 <p>
-                                    Best education coaching center, the staff
-                                    here are very polite, understanding and have
-                                    a kind nature. Best Web Development course
-                                    to get practical knowledge of web
-                                    development and web design.
-                                 </p>
+                      <div className="student__info mt-4">
+                        <h6 className="fw-bold">Ja'far Mirzaraximov</h6>
+                        <p>Technology master</p>
+                      </div>
+                    </div>
+                  </div>
+                  {/* this blog is Doston Mardonov */}
+                  <div>
+                    <div className="single__testimonial">
+                      <h6 className="mb-3 fw-bold">Teachers is expert</h6>
+                      <p>
+                        Being a developer I was always looking for a course,
+                        which can provide practical knowledge in Web development
+                        and I believe MagicSoft Which is part of Backend has
+                        satisfied all my expectations.
+                      </p>
 
-                                 <div className="student__info mt-4">
-                                    <h6 className="fw-bold">
-                                       Ja'far Mirzaraximov
-                                    </h6>
-                                    <p>Technology master</p>
-                                 </div>
-                              </div>
-                           </div>
+                      <div className="student__info mt-4">
+                        <h6 className="fw-bold">Doston Mardonov</h6>
+                        <p>TAQI student</p>
+                      </div>
+                    </div>
+                  </div>
+                  {/* this blog is  Jamshid Kalandarov*/}
 
-                           <div>
-                              <div className="single__testimonial">
-                                 <h6 className="mb-3 fw-bold">
-                                    Teachers is expert
-                                 </h6>
-                                 <p>
-                                    Being a developer I was always looking for a
-                                    course, which can provide practical
-                                    knowledge in Web development and I believe
-                                    MagicSoft Which is part of Backend has
-                                    satisfied all my expectations.
-                                 </p>
-
-                                 <div className="student__info mt-4">
-                                    <h6 className="fw-bold">Doston Mardonov</h6>
-                                    <p>TAQI student</p>
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div>
-                              <div className="single__testimonial">
-                                 <h6 className="mb-3 fw-bold">
-                                    Practical knowledge is impressive
-                                 </h6>
-                                 <p>
-                                    Best education coaching center, the staff
-                                    here are very polite, understanding and have
-                                    a kind nature. Best Web Development course
-                                    to get practical knowledge of web
-                                    development and web design.
-                                 </p>
+                  <div>
+                    <div className="single__testimonial">
+                      <h6 className="mb-3 fw-bold">
+                        Practical knowledge is impressive
+                      </h6>
+                      <p>
+                        Best education coaching center, the staff here are very
+                        polite, understanding and have a kind nature. Best Web
+                        Development course to get practical knowledge of web
+                        development and web design.
+                      </p>
 
                                  <div className="student__info mt-4">
                                     <h6 className="fw-bold">
