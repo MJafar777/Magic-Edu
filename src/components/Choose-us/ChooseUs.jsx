@@ -9,10 +9,10 @@ import ReactPlayer from "react-player";
 const ChooseUs = () => {
    const [showVideo, setShowVideo] = useState(false);
    return (
-      <section>
+      <section className="choose">
          <Container>
-            <Row>
-               <Col lg="6" md="6">
+            <div className="choose__grid">
+               <div>
                   <div className="choose__content">
                      <h2>Why Choose Us</h2>
                      <p>
@@ -29,9 +29,9 @@ const ChooseUs = () => {
                         specific area.
                      </p>
                   </div>
-               </Col>
+               </div>
 
-               <Col lg="6" md="6">
+               <div>
                   <div className="choose__img">
                      {showVideo ? (
                         <ReactPlayer
@@ -53,8 +53,8 @@ const ChooseUs = () => {
                         </span>
                      )}
                   </div>
-               </Col>
-            </Row>
+               </div>
+            </div>
          </Container>
       </section>
    );

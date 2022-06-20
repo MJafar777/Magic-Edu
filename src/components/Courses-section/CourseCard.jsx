@@ -93,17 +93,27 @@ const CourseCard = (props) => {
                               sx={{ mt: 2 }}
                            >
                               <ul>
-                                 <li>Lessons: {lesson}</li>
                                  <li>
-                                    Max students in group:{" "}
+                                    <b>Lessons:</b> {lesson}
+                                 </li>
+                                 <li>
+                                    <b> Max students in group:</b>{" "}
                                     {Math.floor(students / 3)}
                                  </li>
-                                 <li>Price: {price} sum</li>
-                                 <li>Lessons per week: 4 days</li>
-                                 <li>Duration: {duration} months</li>
-                                 <li>Hours per day: 2.5 hours</li>
                                  <li>
-                                    Technologies:
+                                    <b>Price:</b> {price} sum
+                                 </li>
+                                 <li>
+                                    <b>Lessons per week:</b> 4 days
+                                 </li>
+                                 <li>
+                                    <b>Duration:</b> {duration} months
+                                 </li>
+                                 <li>
+                                    <b>Hours per day:</b> 2.5 hours
+                                 </li>
+                                 <li>
+                                    <b>Technologies:</b>
                                     <ol>
                                        {subjects.map((val, key) => {
                                           return (

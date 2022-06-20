@@ -6,27 +6,27 @@ import Slider from "react-slick";
 import img from "../../assests/images/testimonial01.png";
 
 const Testimonials = () => {
-  const settings = {
-    infinite: true,
-    dots: true,
-    speed: 500,
-    slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    slidesToScroll: 1,
-  };
-  return (
-    <section>
-      <Container>
-        <Row>
-          <Col lg="10" md="12" className="m-auto">
-            <div className="testimonial__wrapper d-flex justify-content-between align-items-center ">
-              <div className="testimonial__img w-50">
-                <img src={img} alt="" className="w-100" />
-              </div>
+   const settings = {
+      infinite: true,
+      dots: true,
+      speed: 500,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      slidesToScroll: 1,
+   };
+   return (
+      <section>
+         <Container>
+            <Row>
+               <Col lg="10" md="12" className="m-auto">
+                  <div className="testimonial__wrapper d-flex justify-content-between align-items-center ">
+                     <div className="testimonial__img w-50">
+                        <img src={img} alt="" className="w-100" />
+                     </div>
 
-              <div className="testimonial__content w-50">
-                <h2 className="mb-4">Our Students Voice</h2>
+                     <div className="testimonial__content w-50" id="testimonial__content">
+                        <h2 className="mb-4">Our Students Voice</h2>
 
                 <Slider {...settings}>
                   {/* this blog is Jonibek Munirov */}
@@ -97,20 +97,22 @@ const Testimonials = () => {
                         development and web design.
                       </p>
 
-                      <div className="student__info mt-4">
-                        <h6 className="fw-bold">Jamshid Kalandarov</h6>
-                        <p>TSUE student </p>
-                      </div>
-                    </div>
+                                 <div className="student__info mt-4">
+                                    <h6 className="fw-bold">
+                                       Jamshid Kalandarov
+                                    </h6>
+                                    <p>TSUE student </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </Slider>
+                     </div>
                   </div>
-                </Slider>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  );
+               </Col>
+            </Row>
+         </Container>
+      </section>
+   );
 };
 
 export default Testimonials;

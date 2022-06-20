@@ -1,96 +1,131 @@
+.courses__grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 1%;
+}
+
 .single__course__item {
-	padding: 15px;
+   padding: 15px;
+   background-color: rgba(226, 248, 248, 0.664);
+   border-radius: 10px;
 }
 
 .course__img img {
-	border-radius: 10px;
-	margin-bottom: 20px;
+   border-radius: 10px;
+   margin-bottom: 20px;
 }
 
 .enroll a {
-	text-decoration: none;
-	font-weight: 600;
-	font-size: 0.9rem;
-	color: #17bf9e;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 0.9rem;
+   color: #17bf9e;
 }
 
 .lesson,
 .students,
 .rating {
-	font-size: 0.9rem;
-	color: #0a2b1e;
-	font-weight: 500;
+   font-size: 0.9rem;
+   color: #0a2b1e;
+   font-weight: 500;
 }
 
 .lesson i,
 .students i,
 .rating i {
-	font-weight: 400;
+   font-weight: 400;
 }
 
 .course__title {
-	line-height: 2rem;
+   line-height: 2rem;
 }
 
 .course__top__left h2 {
-	font-weight: 600;
+   font-weight: 600;
+}
+
+.modal_scroll {
+   margin-top: 5%;
 }
 
 .modal_scroll::-webkit-scrollbar {
-	width: 1em;
+   width: 1em;
 }
 
 .modal_scroll::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .modal_scroll::-webkit-scrollbar-thumb {
-	background-color: darkgrey;
-	outline: 1px solid slategrey;
+   background-color: darkgrey;
+   outline: 1px solid slategrey;
 }
 ::-webkit-scrollbar {
-	width: 20px;
+   width: 20px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px grey;
-	border-radius: 10px;
+   box-shadow: inset 0 0 5px grey;
+   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #17bf9e;
-	border-radius: 10px;
+   background: #17bf9e;
+   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #17bf9e;
+   background: #17bf9e;
 }
 
 .modal_scroll::-webkit-scrollbar {
-	width: 20px;
+   width: 20px;
 }
 
 /* Track */
 .modal_scroll::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px grey;
-	border-radius: 10px;
+   box-shadow: inset 0 0 5px grey;
+   border-radius: 10px;
 }
 
 /* Handle */
 .modal_scroll::-webkit-scrollbar-thumb {
-	background: #17bf9e;
-	border-radius: 10px;
+   background: #17bf9e;
+   border-radius: 10px;
 }
 
 /* Handle on hover */
 .modal_scroll::-webkit-scrollbar-thumb:hover {
-	background: #17bf9e;
+   background: #17bf9e;
 }
 
 /* @media (max-width: 400px) {
 	.modal__title {
 	}
 } */
+
+@media (max-width: 600px) {
+   .course__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .course__top__left h2 {
+      margin-left: -20%;
+      width: 80vw;
+   }
+
+   .course__top__left p {
+      margin-left: -30%;
+      width: 80vw;
+   }
+
+   .modal_scroll {
+      margin-top: 10%;
+   }
+} ;

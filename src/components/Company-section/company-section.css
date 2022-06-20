@@ -1,0 +1,20 @@
+.company {
+   background-color: rgba(226, 248, 248, 0.664);
+   margin: -5% 1%;
+   padding: 5% 1%;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   align-items: center;
+   /* justify-items: center; */
+   justify-content: center;
+   text-align: end;
+   gap: 5%;
+   width: 100%;
+}
+
+@media only screen and (max-width: 462px) {
+   .company {
+      padding-bottom: 20%;
+      padding-left: 15%;
+   }
+}

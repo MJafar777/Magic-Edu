@@ -1,4 +1,5 @@
 import React from "react";
+import "./free-course.css";
 
 const FreeCourseCard = (props) => {
    const { imgUrl, title, students, rating } = props.item;
