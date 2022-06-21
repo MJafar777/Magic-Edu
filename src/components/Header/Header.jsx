@@ -5,7 +5,7 @@ import "./header.css";
 const navLinks = [
   {
     display: "Home",
-    url: "#home",
+    url: "#",
   },
   {
     display: "About Us",
